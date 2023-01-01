@@ -14,8 +14,9 @@ class BaseConfig:
     SECRET_KEY = 'LWd2tzlprdGHCIPHTd4tp5SBFgDszm'
     SERVICE_BUS_CONNECTION_STRING ='Endpoint=sb://p3-servicebus.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=jgr5dy6jb8F+bvUdtP5onVdwSkjOpZDlsFAl+kLn/gk=' #TODO: Update value
     SERVICE_BUS_QUEUE_NAME ='notificationqueue'
+    # ADMIN_EMAIL_ADDRESS: 'noor.2023.alghamdi@outlook.com'
     ADMIN_EMAIL_ADDRESS: 'info@techconf.com'
-    SENDGRID_API_KEY = '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' #Configuration not required, required SendGrid Account
+    SENDGRID_API_KEY = '' #Configuration not required, required SendGrid Account
 
 class DevelopmentConfig(BaseConfig):
     DEBUG = True
